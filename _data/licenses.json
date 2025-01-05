@@ -1,0 +1,31 @@
+[
+  {
+    "shortname":"CC0 1.0",
+    "name":"Attribution-NonCommercial-ShareAlike 4.0 International",
+    "url":"https://creativecommons.org/publicdomain/zero/1.0/",
+    "description":"By marking the work with a CC0 public domain dedication, the creator is giving up their copyright and allowing reusers to distribute, remix, adapt, and build upon the material in any medium or format, even for commercial purposes."
+  },
+  {
+    "shortname":"CC BY-SA 4.0",
+    "name":"Attribution-NonCommercial 4.0 International",
+    "url":"https://creativecommons.org/licenses/by-sa/4.0/",
+    "description":"This license requires that reusers give credit to the creator. It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, for noncommercial purposes only."
+  },
+  {
+    "shortname":"CC BY-NC-SA 4.0",
+    "name":"Attribution-NonCommercial-ShareAlike 4.0 International",
+    "url":"https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "description":"This license requires that reusers give credit to the creator. It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, for noncommercial purposes only. If others modify or adapt the material, they must license the modified material under identical terms."
+  },
+  {
+    "shortname":"CC BY-NC-ND 4.0",
+    "name":"Attribution-NonCommercial-NoDerivatives 4.0 International",
+    "url":"https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "description":"This license requires that reusers give credit to the creator. It allows reusers to copy and distribute the material in any medium or format in unadapted form and for noncommercial purposes only."
+  },
+  {
+    "shortname":"All rights reserved",
+    "name":"All rights reserved",
+    "description":"The creator reserves all the rights provided by copyright law, such as distribution, performance, and creation of derivative works."
+  }
+]
