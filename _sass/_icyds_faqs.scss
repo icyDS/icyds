@@ -1,0 +1,14 @@
+.faq {
+    margin: 0 calc(var(--space) * 4) calc(var(--space) * 4) 0;
+  h3 {
+    font-family: var(--font_400italic);
+    margin: 0 0 var(--space);
+    &:after,
+    &:before {
+      content: '"';
+    }
+  }
+  p {
+    font-size: var(--font-size_s);
+  }
+}

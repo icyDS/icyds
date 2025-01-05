@@ -1,0 +1,95 @@
+.website-footer {
+  background: var(--color_tertiary);
+  border-bottom: var(--space) solid var(--color_primary);
+  border-top: var(--border-1);
+  color: var(--color_white);
+  font-size: var(--font-size_m);
+  margin: calc(var(--space)*8) 0 0;
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: calc(var(--space)*4);
+    justify-content: space-between;
+    padding: calc(var(--space)*4) 0;
+    @media (max-width: 34rem) {
+      flex-direction: column;
+      gap: calc(var(--space)*2);
+    }
+  }
+  .logo {
+    &__image {
+      border: none;
+      padding: 0;
+      @media (max-width: 34rem) {
+        margin: 0 auto;
+      }
+    }
+    &__tagline {
+      display: none;
+      visibility: hidden;
+    }
+  }
+  aside {
+    margin: 0;
+    padding: 0;
+    h2 {
+      color: var(--color_black);
+    }
+    p {
+      font-family: var(--font_400);
+      font-size: var(--font-size_s);
+      margin: 0;
+      padding: 0;
+      @media (max-width: 32rem) {
+        text-align: center;
+      }
+    }
+  }
+  nav {
+    background: var(--color_black);
+    h2 {
+      color: var(--color_white);
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: var(--space);
+      list-style: outside none;
+      margin: 0;
+      padding: calc(var(--space)*2) 0;
+      @media (max-width: 34rem) {
+        flex-direction: column;
+      }
+      li {
+        font-size: var(--font-size_xs);
+        @media (max-width: 34rem) {
+          text-align: center;
+        }
+        &:last-child {
+          align-self: center;
+          color: var(--color_white);
+          flex-grow: 1;
+          text-align: right;
+          @media (max-width: 34rem) {
+            font-size: var(--font-size_xxxs);
+            margin: calc(var(--space)*2) 0 0;
+            text-align: center;
+          }
+        }
+        a {
+          color: var(--color_white);
+          font-family: var(--font_300);
+          text-decoration: none;
+          transition: var(--transition-0);
+          &:hover,
+          &:active,
+          &:focus {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+

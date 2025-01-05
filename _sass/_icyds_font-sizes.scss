@@ -1,0 +1,12 @@
+:root {
+  --font-size_xxxs:               var(--space);
+  --font-size_xxs:   calc(var(--space) * 1.25);
+  --font-size_xs:     calc(var(--space) * 1.5);
+  --font-size_s:     calc(var(--space) * 1.75);
+  --font-size_m:        calc(var(--space) * 2);
+  --font-size_l:    calc(var(--space) * 2.125);
+  --font-size_xl:    calc(var(--space) * 2.25);
+  --font-size_xxl:    calc(var(--space) * 2.4);
+  --font-size_xxxl: calc(var(--space) * 2.675);
+  --font-size_xxxxl:  calc(var(--space) * 3.5);
+}

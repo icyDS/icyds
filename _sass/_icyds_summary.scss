@@ -1,0 +1,21 @@
+.summary {
+  border-top: var(--border-0);
+  border-bottom: var(--border-0);
+  font-family: var(--font_400);
+  font-size: var(--font-size_m);
+  line-height: 1.225;
+  padding: calc(var(--space)*2) 0;
+  margin: 0 0 calc(var(--space)*4) 0;
+  code {
+    font-family: var(--font_500mono);
+  }
+  em,
+  i {
+    font-family: var(--font_400italic);
+  }
+}
+
+.main-section ~ .summary {
+  border-top: none;
+  padding: 0 0 calc(var(--space)*2);
+}

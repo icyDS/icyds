@@ -1,0 +1,29 @@
+/* VARIABLES */
+
+:root {
+  --page-width:    50rem;
+  --space:         .7rem;
+  --barespace:        .7;
+}
+
+html {
+  background: var(--color_grey-0);
+}
+body {
+  margin: 0 auto;
+  padding: 0; 
+  header,
+  nav,
+  main,
+  footer {
+    .wrapper {
+      margin: 0 auto;
+      padding: 0 calc(var(--space) * 2);
+      max-width: var(--page-width);
+    }
+  }
+  header {
+    background: var(--color_primary);
+    padding: calc(var(--space) * 2) 0;
+  }
+}

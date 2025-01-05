@@ -1,0 +1,59 @@
+main {
+  form {
+    background: var(--color_grey-1);
+    border: 0.004rem solid var(--color_grey-3);
+    border-radius: var(--border-radius-1);
+    margin: calc(var(--space) * 2) 0;
+    padding: calc(var(--space) * 2);
+    input,
+    label,
+    select,
+    textarea {
+      box-sizing: border-box;
+      font-size: var(--font-size_m);
+      width: 100%;
+    }
+    input,
+    select,
+    textarea {
+      background: var(--color_white);
+      border: 0.004rem solid var(--color_grey-3);
+      border-radius: var(--border-radius-0);
+      box-shadow: inset 0 .1875rem .1875rem 0 rgba(0,0,0,0.15);
+      font-family: var(--font_300);
+      font-size: var(--font-size_m);
+      line-height: calc(var(--space) * 2);
+      padding: 0.5rem 0.6rem;
+      &:active,
+      &:focus,
+      &:focus-visible {
+        border: 0.004rem solid var(--color_black);
+        outline: none;
+      }
+      option {
+        display: block;
+        min-height: none;
+        padding: 0;
+        white-space: nowrap;
+      }
+    }
+  }
+  button.button + button.button {
+    margin: 0 0 0 1rem; 
+  }
+  button.button + button.button__contained--submit {
+    float: right;
+  }
+  label {
+    font-family: var(--font_400);
+    padding: 0 0.6rem 0.5rem 0.25rem;
+    display: block;
+    &.required {
+      &:after {
+        content: " *";
+        font-family: var(--font_300);
+        font-size: var(--font-size_xxs);
+      }
+    }
+  }
+}

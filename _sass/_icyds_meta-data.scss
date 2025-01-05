@@ -1,0 +1,33 @@
+h1 + dl.meta-data {
+  margin: calc(var(--space) * -1) 0 calc(var(--space) * 4) 0;
+  @media (max-width: 38rem) {
+    margin: var(--space) 0 calc(var(--space) * 3) 0;
+  }
+}
+dl.meta-data {
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  dd,
+  dt {
+    color: var(--color_grey-5);
+    display: inline;
+    font-family: var(--font_300);
+    font-size: var(--font-size_xxs);
+    line-height: 1;
+    time {
+      line-height: .9;
+    }
+    a:after {
+      content: "";
+    }
+  }
+  dd,
+  dd:last-of-type {
+    white-space: nowrap;
+    margin: 0 1rem 0 .3rem;
+  }
+  dt {
+    font-family: var(--font_500);
+  }
+}

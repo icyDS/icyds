@@ -1,0 +1,85 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: calc(var(--space)*4) 0;
+  width: 100%;
+  /* horizontal scroll hacks */
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    height: 0.875rem;
+    width: 0.875rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem;
+    border: 0.1875 solid var(--color_white-0);
+    background-color: rgba(0, 0, 0, .3);
+  }
+  caption {
+    border-bottom: 0.004rem solid var(--color_grey-2);
+    caption-side: bottom;
+    color: var(--color_grey-5);
+    font-family: var(--font_400);
+    font-size: var(--font-size_xxs);
+    padding: calc(var(--space)*2) 0;
+    text-align: left;
+    p {
+      font-family: var(--font_300);
+      font-size: var(--font-size_xxs);
+      line-height: 1.2;
+    }
+  }
+  thead tr {
+    box-shadow: var(--box-shadow-0);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  tr {
+    border-bottom: calc(var(--space)/2) solid var(--color_grey-0);
+    color: var(--color_black-0);
+    font-family: var(--font_300);
+    font-size: var(--font-size_xs);
+    margin: 0;
+    
+    th {
+      background: var(--color_grey-0);
+      font-family: var(--font_400);
+      font-size: var(--font-size_xs);
+      padding: var(--space) var(--space) calc(var(--space)*2) var(--space);
+      text-align: left;
+      vertical-align: top;
+      &:first-child {
+        padding: var(--space) var(--space) calc(var(--space)*2) 0;
+      }
+    }
+  }
+  td {
+    background: white;
+    padding: calc(var(--space)*2) var(--space);
+    vertical-align: top;
+    p {
+      color: var(--color_black-0);
+      font-family: var(--font_300);
+      font-size: var(--font-size_xs);
+      line-height: calc(var(--space)*2);
+      margin: 0 0 0.5rem 0;
+      small {
+        font-size: var(--font-size_xxs);
+      }
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+    ol,
+    ul {
+      margin: -.2rem 0 0 -1.2rem;
+      li {
+        font-size: inherit;
+      }
+    }
+    p + ol,
+    p + ul {
+      margin: 0 0 0 -1.2rem;
+    }
+  }
+}

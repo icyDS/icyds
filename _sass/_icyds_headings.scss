@@ -1,0 +1,100 @@
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  color: var(--color_grey-5);
+  font-family: var(--font_500);
+  font-weight: normal;
+  margin: calc(var(--space) * 5 ) 0 calc(var(--space) * 2);
+  text-wrap: balance;
+  abbr {
+    text-decoration: none;
+  }
+}
+
+main h1 {
+  font-family: var(--font_700condensed);
+  font-size: var(--font-size_xxxxl); 
+  display: block;
+  line-height: 1.4;
+  margin: calc(var(--space) * 3) 0 calc(var(--space) * 2);
+  padding: 0;
+  position: relative;
+  @media (max-width: 38rem) {
+    font-size: var(--font-size_xxxl);
+    margin: calc(var(--space) * 3) 0 calc(var(--space) * 1);
+  }
+  @media (max-width: 32rem) {
+    font-size: var(--font-size_xxxl);
+    margin: calc(var(--space) * 3) 0 var(--space);
+  }
+  &.main-section {
+    border-bottom: var(--border-0);
+    font-family: var(--font_900);
+    padding: calc(var(--space)*2) 0 calc(var(--space)*3);
+  }
+}
+
+main h2 {
+  font-family: var(--font_700condensed);
+  font-size: var(--font-size_xxxl);
+}
+main dl + h2,
+main p + h2,
+main pre + h2,
+main ul + h2 {
+  margin: calc(var(--space) * 6 ) 0 calc(var(--space) * 2);
+}
+main .highlighter-rouge + h2 {
+  margin: calc(var(--space) * 8 ) 0 calc(var(--space) * 2);
+}
+
+main h3 {
+  font-family: var(--font_400condensed);
+  font-size: var(--font-size_xxl);
+}
+main dl + h3,
+main p + h3,
+main pre + h3,
+main ul + h3 {
+  margin: calc(var(--space) * 5 ) 0 calc(var(--space) * 2);
+}
+main .highlighter-rouge + h3 {
+  margin: calc(var(--space) * 6 ) 0 calc(var(--space) * 2);
+}
+
+main h4 {
+  font-family: var(--font_400condensed);
+  font-size: var(--font-size_xl);
+}
+main dl + h4,
+main p + h4,
+main pre + h4,
+main ul + h4 {
+  margin: calc(var(--space) * 5 ) 0 calc(var(--space) * 2);
+}
+main .highlighter-rouge + h4 {
+  margin: calc(var(--space) * 6 ) 0 calc(var(--space) * 2);
+}
+
+main h5 {
+  font-size: var(--font-size_l);
+}
+main dl + h5,
+main p + h5,
+main pre + h5,
+main ul + h5 {
+  margin: calc(var(--space) * 5 ) 0 calc(var(--space) * 2);
+}
+
+main h6 {
+  font-size: var(--font-size_m);
+}
+main dl + h6
+main p + h6,
+main pre + h6,
+main ul + h6 {
+  margin: calc(var(--space) * 5 ) 0 calc(var(--space) * 2);
+}

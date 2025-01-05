@@ -1,0 +1,31 @@
+blockquote {
+  background: white;
+  border-left: solid calc(var(--space)/4) var(--color_black);
+  margin: calc(var(--space)*5) calc(var(--space)*2) calc(var(--space)*5);
+  padding: var(--space) var(--space) var(--space) calc(var(--space)*2);
+  p {
+    font-family: var(--font_300italic);
+    line-height: calc(var(--barespace)*1.8);
+    b,
+    strong {
+      font-family: var(--font_500italic);
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  blockquote {
+    margin: var(--space) calc(var(--space)*2) calc(var(--space)*2);
+    p {
+      font-size: 90%;
+    }
+  }
+}
+blockquote > h1,
+blockquote > h2,
+blockquote > h3,
+blockquote > h4,
+blockquote > h5,
+blockquote > h6 {
+  margin-top: 0;
+}

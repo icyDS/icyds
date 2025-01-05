@@ -1,0 +1,62 @@
+/* Content lists */
+main {
+  ol,
+  ul {
+    font-family: var(--font_300);
+    list-style: none;
+    margin: calc(var(--space) * 2) 0 calc(var(--space) * 2) 0;
+    li {
+      font-family: var(--font_300);
+      font-size: var(--font-size_m);
+      margin: 0 0 var(--space);
+      &::before {
+        content: "\2022";
+        color: var(--color_black);
+        display: inline-block;
+        margin-left: -1rem;
+        width: 1rem;
+      }
+      @media (max-width: 50rem) {
+        margin: 0 0 .4rem 0;
+      }
+      @media (max-width: 30rem) {
+        margin: 0 0 .6rem 0;
+      }
+      @media (max-width: 20rem) {
+        margin: 0 0 .8rem 0;
+      }
+      br {
+        margin: .4rem 0 .25rem;
+      }
+      p {
+        display: inline;
+      }
+      ol,
+      ul {
+        margin: var(--space) 0 var(--space) 0;
+        li {
+          font-size: var(--font-size_s);
+          br {
+            margin: calc(var(--space)/2) 0 calc(var(--space)/3);
+          }
+          &::before {
+             content: "\2022";
+             color: var(--color_black);
+             display: inline-block;
+          }
+        }
+      }
+      ol li:before {
+        content: "";
+        width: 1.2rem;
+      }
+    }
+  }
+  ol {
+    list-style: decimal;
+    li:before {
+      content: "";
+      width: 1.2rem;
+    }
+  }
+}

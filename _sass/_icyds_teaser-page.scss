@@ -1,0 +1,29 @@
+main .teaser-page {
+  margin: 0 calc(var(--space) * -2) calc(var(--space) * 2);
+  a {
+    background: var(--color_white);
+    box-shadow: var(--box-shadow-0);
+    color: var(--color_black);
+    display: block;
+    padding: calc(var(--space) * 2);
+    text-decoration: none;
+    h3 {
+      font-size: var(--font-size_s);
+      margin: 0 0 var(--space);
+    }
+    p {
+      margin: 0;
+      font-size: var(--font-size_s);
+    }
+    &:active,
+    &:focus,
+    &:hover {
+      h3 {
+        text-decoration: underline;
+        }
+      p {
+        text-decoration: none;
+      }
+    }
+  }
+}

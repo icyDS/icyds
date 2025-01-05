@@ -1,0 +1,52 @@
+/* Brand Colors - Corporate Identity (CI) */
+
+:root {
+  --color_primary:            rgba(3, 22, 48, 1);   /* #031630 */
+  --color_primary-variant:    rgba(51, 51, 51, 1);
+  
+  --color_secondary:          rgba(3, 54, 80, 1);   /* #033650 */
+  --color_secondary-variant:  rgba(2, 119, 189, 1);
+
+  --color_tertiary:           rgba(3, 101, 96, 1);  /* #036560 */
+  --color_tertiary-variant:   
+}
+
+
+/* Basic Colors - Black, white and shades of grey */
+
+:root {
+  --color_black:              rgba(0, 0, 0, 1);
+  --color_white:              rgba(255, 255, 255, 1);
+  
+  --color_grey-0:             rgba(250, 250, 250, 1);
+  --color_grey-1:             rgba(236, 239, 241, 1);
+  --color_grey-2:             rgba(207, 216, 220, 1);
+  --color_grey-3:             rgba(176, 190, 197, 1);
+  --color_grey-4:             rgba(144, 164, 174, 1);
+  --color_grey-5:             rgba(51, 51, 51, 1);
+}
+
+
+/* Actions - Forms, links */
+
+:root {
+  --color_action:             rgba(17, 103, 177, 1);
+  --color_action-variant:     rgba(3, 36, 92, 1);
+}
+
+
+/* Alerts, Warnings, Status Conditions */
+
+:root {
+  --color_note:               rgba(0, 98, 185, 1);
+  --color_note-variant:       rgba(0, 98, 185, .05);
+  
+  --color_success:            rgba(46, 133, 64, 1);
+  --color_success-variant:    rgba(46, 133, 64, .05);
+
+  --color_alert:              rgba(205, 32, 38, 1);
+  --color_alert-variant:      rgba(205, 32, 38, .05);
+
+  --color_warning:            rgba(208, 133, 0, 1);
+  --color_warning-variant:    rgba(208, 133, 0, .05);
+}

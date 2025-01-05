@@ -1,0 +1,42 @@
+section.teaser-boxes {
+  h2 a {
+    color: var(--color_grey-5);
+  }
+  div {
+    display: grid;
+    gap: calc(var(--space) * 3);
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 0 calc(var(--space) * 2);
+    @media (max-width: 32rem) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    article {
+      a {
+        color: var(--color_black);
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        h3 {
+          color: var(--color_action);
+          font-size: var(--font-size_m);
+          margin: 0 0 var(--space);
+        }
+        p {
+          font-size: var(--font-size_xs);
+          line-height: calc(var(--space)*2);
+          margin: 0;
+        }
+        &:active,
+        &:focus,
+        &:hover {
+          h3 {
+            text-decoration: underline;
+            }
+          p {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
